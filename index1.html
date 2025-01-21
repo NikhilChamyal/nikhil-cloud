@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Lab</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #a8ff78, #78ffd6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #2d3436;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #2d3436;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .quote {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #0984e3;
+            margin-top: 15px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .pattern {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #f1f1f1 10px,
+                #f1f1f1 20px
+            ),
+            repeating-linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.5) 10px,
+                rgba(240, 240, 240, 0.5) 10px,
+                rgba(240, 240, 240, 0.5) 20px
+            );
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            background: #00cec9;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #0984e3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="pattern"></div>
+    <div class="container">
+        <h1>Hi Nikhil Chamyal</h1>
+        <p class="quote">"The best way to predict the future is to create it."</p>
+        <button onclick="alert('This front page is for Cloud Computing Lab')">Click Me</button>
+    </div>
+</body>
+</html>
+
+
